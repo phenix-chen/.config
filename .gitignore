@@ -1,0 +1,10 @@
+# ignore everything
+/*
+/*/
+
+# but thest:
+!/zsh/
+!/nvim/
+!/git/
+!/pip/
+!.gitignore

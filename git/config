@@ -1,0 +1,12 @@
+[chen]
+	email = c252156290@gmail.com
+	name = chen
+[user]
+	email = c252156290@gmail.com
+	name = chen
+[alias]
+	co = checkout
+    ci = commit
+    st = status
+    last = log -1 HEAD
+	logl = log --oneline --graph
