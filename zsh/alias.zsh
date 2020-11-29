@@ -1,6 +1,6 @@
 # zsh
-alias zshconfig="vim ~/.zshrc"
-alias sozsh="source ~/.zshrc"
+alias zshconfig="vim ~/.config/zsh/.zshrc"
+alias sozsh="source ~/.config/zsh/.zshrc"
 
 # vim
 alias vimconfig="nv ~/.config/nvim/init.vim"
@@ -11,3 +11,4 @@ alias nv="nvim"
 alias ejectusb="diskutil unmount /Volumes/CHEN"
 
 alias ra="ranger"
+alias cat=ccat

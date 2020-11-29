@@ -11,3 +11,4 @@ git pull origin master
 touch ~/.zshenv
 echo "export ZDOTDIR=$HOME/.config/zsh" >> ~/.zshenv
 ```
+

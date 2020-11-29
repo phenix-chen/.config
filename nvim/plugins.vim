@@ -32,10 +32,12 @@ Plug 'puremourning/vimspector'
 " Python
 
 " Markdown
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+" Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
 Plug 'dkarter/bullets.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 
 " Editor
 Plug 'pechorin/any-jump.vim'
@@ -43,6 +45,9 @@ Plug 'pechorin/any-jump.vim'
 " General Highlighter
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'RRethy/vim-illuminate'
+
+" wiki
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 
@@ -192,3 +197,24 @@ nmap <silent> <c-p> :Files<cr>
 nmap <silent> <c-g> :GFiles<cr>
 " nmap <silent> <c-o> :Buffers<cr>
 nmap <c-f> :Rg!<space>
+
+" ===
+" === vim-instant-markdown
+" ===
+" let g:instant_markdown_slow = 0
+" let g:instant_markdown_autostart = 0
+" let g:instant_markdown_autoscroll = 1
+
+" ===
+" === vimwiki
+" ===
+let g:vimwiki_list = [
+    \{'path': '/Users/chen/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor/Notebook',
+     \'syntax': 'markdown', 
+     \'ext': '.md'},
+    \{'path': '/Users/chen/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor/TodoList',
+     \'syntax': 'markdown',
+     \'ext': 'md'}]
+map <leader>wl <Plug>VimwikiToggleListItem
+map <leader>wk <Plug>VimwikiRejectedListItem
+

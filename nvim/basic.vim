@@ -214,6 +214,11 @@ nmap <c-a> 0
 nmap <c-e> $
 inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
+
+nmap u <c-u>
+nmap e <c-d>
+nmap z <undo>
+
 " Remap line motion commands
 noremap k gk
 noremap gk k
@@ -252,11 +257,11 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 map <leader>t<leader> :tabnext 
 
-map 11 1gt
-map 22 2gt
-map 33 3gt
-map 44 4gt
-map 55 5gt
+map <leader>1 1gt
+map <leader>2 2gt
+map <leader>3 3gt
+map <leader>4 4gt
+map <leader>5 5gt
 
 nnoremap tj   :tabprevious<CR>
 nnoremap tk   :tabnext<CR>
