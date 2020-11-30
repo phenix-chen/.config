@@ -11,4 +11,9 @@ alias nv="nvim"
 alias ejectusb="diskutil unmount /Volumes/CHEN"
 
 alias ra="ranger"
-alias cat=ccat
+
+
+if test ccat; then
+    alias cat=ccat
+fi
+
