@@ -12,6 +12,3 @@ if [ -z $XDG_CACHE_HOME ]; then
     export ANTIGEN_LOG=$XDG_CACHE_HOME/antigen
 fi
 
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
