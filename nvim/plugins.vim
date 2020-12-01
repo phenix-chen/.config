@@ -140,7 +140,8 @@ nmap tt :CocCommand explorer<cr>
 " ===
 " === Leaderf
 " ===
-" nmap <c-p> :Leaderf file<cr>
+nmap <c-p> :Leaderf file<cr>
+nmap <c-f> :LeaderfFunction!<cr>
 
 
 " ===
@@ -162,7 +163,7 @@ let g:scrollstatus_size = 15
 " ===
 " === vimspector
 " ===
-  nmap <leader>dd         :call vimspector#Launch()
+  nmap <leader>dd         :call vimspector#Launch()<cr>
   nmap <leader>dc         <Plug>VimspectorContinue
   nmap <leader>ds         <Plug>VimspectorStop
   nmap <leader>dr         <Plug>VimspectorRestart
@@ -195,10 +196,10 @@ hi illuminatedWord cterm=undercurl gui=undercurl
 " ===
 " === fzf.vim
 " ===
-nmap <silent> <c-p> :Files<cr>
-nmap <silent> <c-g> :GFiles<cr>
+" nmap <silent> <c-p> :Files<cr>
+" nmap <silent> <c-g> :GFiles<cr>
 " nmap <silent> <c-o> :Buffers<cr>
-nmap <c-f> :Rg!<space>
+" nmap <c-f> :Rg!<space>
 
 " ===
 " === vim-instant-markdown
