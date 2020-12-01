@@ -48,6 +48,8 @@ Plug 'RRethy/vim-illuminate'
 
 " wiki
 Plug 'vimwiki/vimwiki'
+
+Plug 'psliwka/vim-smoothie'
 call plug#end()
 
 

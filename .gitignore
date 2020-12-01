@@ -9,3 +9,5 @@
 !/pip/
 !.gitignore
 !README.md
+
+local.zsh
