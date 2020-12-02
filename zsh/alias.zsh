@@ -13,7 +13,7 @@ alias ejectusb="diskutil unmount /Volumes/CHEN"
 alias ra="ranger"
 
 
-if test ccat; then
-    alias cat=ccat
-fi
+# if test ccat; then
+#     alias cat=ccat
+# fi
 

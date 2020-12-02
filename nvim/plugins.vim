@@ -141,7 +141,8 @@ nmap tt :CocCommand explorer<cr>
 " ===
 " === Leaderf
 " ===
-" nmap <c-p> :Leaderf file<cr>
+nmap <c-p> :Leaderf file<cr>
+nmap <c-f> :LeaderfFunction!<cr>
 
 
 " ===
@@ -212,10 +213,10 @@ hi illuminatedWord cterm=undercurl gui=undercurl
 " ===
 " === fzf.vim
 " ===
-nmap <silent> <c-p> :Files<cr>
-nmap <silent> <c-g> :GFiles<cr>
+" nmap <silent> <c-p> :Files<cr>
+" nmap <silent> <c-g> :GFiles<cr>
 " nmap <silent> <c-o> :Buffers<cr>
-nmap <c-f> :Rg!<space>
+" nmap <c-f> :Rg!<space>
 
 " ===
 " === vim-instant-markdown
