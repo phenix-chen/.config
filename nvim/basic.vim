@@ -17,6 +17,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,6 +49,10 @@ nmap <leader>rc :source $MYVIMRC<cr>
 " command W w !sudo tee % > /dev/null
 
 
+" easy config
+nmap <leader>sp :tabnew ~/.config/nvim/plugins.vim<cr>
+nmap <leader>sb :tabnew ~/.config/nvim/basic.vim<cr>
+nmap <leader>ss :tabnew ~/.config/nvim/init.vim<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -343,13 +348,13 @@ endif
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+" map <leader>ss :setlocal spell!<cr>
 
-" Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
+" " Shortcuts using <leader>
+" map <leader>sn ]s
+" map <leader>sp [s
+" map <leader>sa zg
+" map <leader>s? z=
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

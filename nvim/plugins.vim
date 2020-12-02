@@ -28,6 +28,7 @@ Plug 'ajmwagar/vim-deus'
 
 " Debug
 Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'
 
 " Python
 
@@ -162,18 +163,34 @@ let g:scrollstatus_size = 15
 " ===
 " === vimspector
 " ===
-  nmap <leader>dd         :call vimspector#Launch()
-  nmap <leader>dc         <Plug>VimspectorContinue
-  nmap <leader>ds         <Plug>VimspectorStop
-  nmap <leader>dr         <Plug>VimspectorRestart
-  nmap <leader>dp         <Plug>VimspectorPause
-  nmap <leader>db         <Plug>VimspectorToggleBreakpoint
-  " nmap <leader><F9> <Plug>VimspectorToggleConditionalBreakpoint
-  " nmap <leader>         <Plug>VimspectorAddFunctionBreakpoint
-  " nmap <leader><F8> <Plug>VimspectorRunToCursor
-  nmap <leader>du        <Plug>VimspectorStepOver
-  nmap <leader>di        <Plug>VimspectorStepInto
-  nmap <leader>do        <Plug>VimspectorStepOut
+fun! GotoWindow(id)
+    call win_gotoid(a:id)
+    MaximizerToggle
+endfun
+nnoremap <leader>m :MaximizerToggle!<CR>
+nmap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
+nmap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
+nmap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
+nmap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
+nmap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
+nmap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
+nmap <leader>de :call vimspector#Reset()<CR>
+
+nmap <leader>dd         :call vimspector#Launch()
+nmap <leader>d<space>   <Plug>VimspectorContinue
+nmap <leader>dr         <Plug>VimspectorRestart
+nmap <leader>dj        <Plug>VimspectorStepOver
+nmap <leader>dk        <Plug>VimspectorStepInto
+nmap <leader>dl        <Plug>VimspectorStepOut
+nmap <leader>drc        <Plug>VimspectorRunToCursor
+
+nmap <leader>db         <Plug>VimspectorToggleBreakpoint
+nmap <leader>dcb        <Plug>VimspectorToggleConditionalBreakpoint
+" nmap <leader>ds         <Plug>VimspectorStop
+" nmap <leader>dp         <Plug>VimspectorPause
+" nmap <leader><F9> <Plug>VimspectorToggleConditionalBreakpoint
+" nmap <leader>         <Plug>VimspectorAddFunctionBreakpoint
+" nmap <leader><F8> <Plug>VimspectorRunToCursor
 
 " ===
 " === Bullets.vim
@@ -219,4 +236,6 @@ let g:vimwiki_list = [
      \'ext': 'md'}]
 map <leader>wl <Plug>VimwikiToggleListItem
 map <leader>wk <Plug>VimwikiRejectedListItem
+map <leader>wv <Plug>VimwikiVSplitLink
+map <leader>ws <Plug>VimwikiSplitLink
 
