@@ -14,11 +14,14 @@ antigen bundle timer
 antigen bundle themes
 antigen bundle docker
 antigen bundle docker-compose
-antigen bundle vi-mode
+# antigen bundle vi-mode
+antigen bundle sudo
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # antigen theme robbyrussell
-antigen bundle ys
+# antigen theme ys
+THEME=ys
+antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 antigen apply
