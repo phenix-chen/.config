@@ -47,6 +47,8 @@ Plug 'pechorin/any-jump.vim'
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'RRethy/vim-illuminate'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
 " wiki
 Plug 'vimwiki/vimwiki'
 

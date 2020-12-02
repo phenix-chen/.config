@@ -12,6 +12,11 @@ alias ejectusb="diskutil unmount /Volumes/CHEN"
 
 alias ra="ranger"
 
+# tmux
+alias attach="tmux attach-session -t"
+alias tls="tmux ls"
+alias tmk="tmux kill-session -t"
+alias tvi="tmuxp load ide"
 
 # if test ccat; then
 #     alias cat=ccat
