@@ -237,8 +237,9 @@ let g:vimwiki_list = [
     \{'path': '/Users/chen/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor/TodoList',
      \'syntax': 'markdown',
      \'ext': 'md'}]
+map <leader>wt <Plug>VimwikiTabIndex :lcd %:p:h<cr>
 map <leader>wl <Plug>VimwikiToggleListItem
 map <leader>wk <Plug>VimwikiRejectedListItem
-map <leader>wv <Plug>VimwikiVSplitLink
-map <leader>ws <Plug>VimwikiSplitLink
+map <leader>wv <Plug>VimwikiVSplitLink 
+map <leader>wb <Plug>VimwikiSplitLink
 

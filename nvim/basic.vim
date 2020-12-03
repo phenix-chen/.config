@@ -53,6 +53,9 @@ nmap <leader>rc :source $MYVIMRC<cr>
 nmap <leader>sp :tabnew ~/.config/nvim/plugins.vim<cr>
 nmap <leader>sb :tabnew ~/.config/nvim/basic.vim<cr>
 nmap <leader>ss :tabnew ~/.config/nvim/init.vim<cr>
+
+" Open up lazygit
+map <c-g> :tabe<cr>:-tabmove<cr>:term lazygit<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -18,6 +18,8 @@ alias tls="tmux ls"
 alias tmk="tmux kill-session -t"
 alias tvi="tmuxp load ide"
 
+# lazygit
+alias lg=lazygit
 # if test ccat; then
 #     alias cat=ccat
 # fi
