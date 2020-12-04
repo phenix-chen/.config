@@ -58,11 +58,12 @@ nmap <leader>ss :tabnew ~/.config/nvim/init.vim<cr>
 map <c-g> :tabe<cr>:-tabmove<cr>:term lazygit<cr>
 
 " terminal
-" tmap <esc> <c-\><c-n>
-tmap <c-j> <c-w>j
-tmap <c-k> <c-w>k
-tmap <c-h> <c-w>h
-tmap <c-l> <c-w>l
+tmap <c-j> <c-\><c-n><c-w>j
+tmap <c-k> <c-\><c-n><c-w>k
+tmap <c-l> <c-\><c-n><c-w>l
+tmap <c-h> <c-\><c-n><c-w>h
+tmap <esc> <c-\><c-n>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -471,6 +472,6 @@ let g:asyncrun_open = 15
 " => Terminal
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set termwinsize=10x0
-tmap <c-k> <c-w>N<c-w>k
+" tmap <c-k> <c-w>N<c-w>k
 
 
