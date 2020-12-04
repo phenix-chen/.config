@@ -19,6 +19,7 @@ Plug 'ojroques/vim-scrollstatus'
 
 " Auto complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'theniceboy/vim-snippets'
 
 " TagList
 Plug 'liuchengxu/vista.vim'
@@ -53,6 +54,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
 
 Plug 'psliwka/vim-smoothie'
+
+Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 
@@ -78,9 +81,9 @@ let g:coc_global_extensions = [
     \ 'coc-gitignore',
     \ 'coc-json',
     \ 'coc-prettier',
+    \ 'coc-snippets',
     \ 'coc-python', 
     \ 'coc-pyright', 
-    \ 'coc-snippets',
     \ 'coc-vimlsp']
 set hidden
 set updatetime=100
@@ -100,7 +103,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-inoremap <<silent><<expr> <c-o> coc#refresh()
+inoremap <silent><<expr> <c-o> coc#refresh()
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
@@ -143,7 +146,7 @@ nmap tt :CocCommand explorer<cr>
 " ===
 " === Leaderf
 " ===
-nmap <c-p> :Leaderf file<cr>
+" nmap <c-p> :Leaderf file<cr>
 nmap <c-f> :LeaderfFunction!<cr>
 
 
@@ -215,10 +218,10 @@ hi illuminatedWord cterm=undercurl gui=undercurl
 " ===
 " === fzf.vim
 " ===
-" nmap <silent> <c-p> :Files<cr>
+nmap <silent> <c-p> :Files<cr>
 " nmap <silent> <c-g> :GFiles<cr>
 " nmap <silent> <c-o> :Buffers<cr>
-" nmap <c-f> :Rg!<space>
+nmap <c-b> :Rg!<space>
 
 " ===
 " === vim-instant-markdown
@@ -242,4 +245,17 @@ map <leader>wl <Plug>VimwikiToggleListItem
 map <leader>wk <Plug>VimwikiRejectedListItem
 map <leader>wv <Plug>VimwikiVSplitLink 
 map <leader>wb <Plug>VimwikiSplitLink
+
+function! VimwikiFindIncompleteTasks()
+  lvimgrep /- \[ \]/ %:p
+  lopen
+endfunction
+
+function! VimwikiFindAllIncompleteTasks()
+  VimwikiSearch /- \[ \]/
+  lopen
+endfunction
+
+nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
+nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
 

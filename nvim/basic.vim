@@ -33,8 +33,8 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = " "
-noremap ; :
+let mapleader = ";"
+" noremap ; :
 
 " Save & quit
 noremap Q :q<cr>
@@ -56,6 +56,13 @@ nmap <leader>ss :tabnew ~/.config/nvim/init.vim<cr>
 
 " Open up lazygit
 map <c-g> :tabe<cr>:-tabmove<cr>:term lazygit<cr>
+
+" terminal
+tmap <esc> <c-\><c-n>
+tmap <c-j> <c-w>j
+tmap <c-k> <c-w>k
+tmap <c-h> <c-w>h
+tmap <c-l> <c-w>l
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
