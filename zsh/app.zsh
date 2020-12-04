@@ -4,6 +4,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f $HOME/.config/bin/z.sh ] && . $HOME/.config/bin/z.sh
 
 # thefuck
 eval $(thefuck --alias)
@@ -14,6 +15,6 @@ eval $(thefuck --alias)
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init - --no-rehash)"
-    # eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
+#     # eval "$(pyenv init -)"
+    # eval "$(pyenv virtualenv-init -)"
 fi
