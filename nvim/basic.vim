@@ -58,7 +58,7 @@ nmap <leader>ss :tabnew ~/.config/nvim/init.vim<cr>
 map <c-g> :tabe<cr>:-tabmove<cr>:term lazygit<cr>
 
 " terminal
-tmap <esc> <c-\><c-n>
+" tmap <esc> <c-\><c-n>
 tmap <c-j> <c-w>j
 tmap <c-k> <c-w>k
 tmap <c-h> <c-w>h

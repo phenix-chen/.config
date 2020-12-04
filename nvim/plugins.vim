@@ -55,7 +55,10 @@ Plug 'vimwiki/vimwiki'
 
 Plug 'psliwka/vim-smoothie'
 
-Plug 'liuchengxu/vim-which-key'
+" Plug 'liuchengxu/vim-which-key'
+
+"Terminal
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 
@@ -259,3 +262,6 @@ endfunction
 nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
 nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
 
+" ===
+" === floaterm
+" ===
