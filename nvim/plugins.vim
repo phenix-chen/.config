@@ -7,6 +7,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'mileszs/ack.vim'
 " Plug 'dense-analysis/ale'
+" Plug 'yggdroot/indentline'
 " Plug 'prabirshrestha/vim-lsp'
 " Plug 'mattn/vim-lsp-settings'
 " Plug 'Shougo/deoplete.nvim'
@@ -26,6 +27,8 @@ Plug 'liuchengxu/vista.vim'
 
 " theme
 Plug 'ajmwagar/vim-deus'
+Plug 'w0ng/vim-hybrid'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Debug
 Plug 'puremourning/vimspector'
@@ -73,7 +76,9 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark    " Setting dark mode
-colorscheme deus
+" colorscheme deus
+" colorscheme hybrid
+colorscheme dracula
 let g:deus_termcolors=256
 
 " ===
@@ -83,9 +88,9 @@ let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-gitignore',
     \ 'coc-json',
+    \ 'coc-lists',
     \ 'coc-prettier',
     \ 'coc-snippets',
-    \ 'coc-python', 
     \ 'coc-pyright', 
     \ 'coc-vimlsp']
 set hidden
@@ -185,7 +190,7 @@ nmap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
 nmap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
 nmap <leader>de :call vimspector#Reset()<CR>
 
-nmap <leader>dd         :call vimspector#Launch()
+nmap <leader>dd         :call vimspector#Launch()<cr>
 nmap <leader>d<space>   <Plug>VimspectorContinue
 nmap <leader>dr         <Plug>VimspectorRestart
 nmap <leader>dj        <Plug>VimspectorStepOver
@@ -265,3 +270,5 @@ nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
 " ===
 " === floaterm
 " ===
+
+

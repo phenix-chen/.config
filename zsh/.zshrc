@@ -29,4 +29,4 @@ function cd {
     auto_pipenv_shell
 }
 
-auto_pipenv_shell
+# auto_pipenv_shell

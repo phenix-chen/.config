@@ -20,8 +20,12 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+# theme
+# antigen theme denysdovhan/spaceship-prompt
+
 # antigen theme robbyrussell
 # antigen theme ys
 THEME=ys
+# THEME=denysdovhan/spaceship-prompt
 antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 antigen apply

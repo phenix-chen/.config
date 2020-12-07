@@ -4,5 +4,6 @@
    "suggest.enablePreselect": false,
    "python.jediEnabled": false,
    "python.linting.flake8Enabled": true,
+   "python.linting.pylintEnabled": false,
    "python.autoComplete.addBrackets": true
 }
