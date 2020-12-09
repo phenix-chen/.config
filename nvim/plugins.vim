@@ -46,6 +46,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 " Editor
 Plug 'pechorin/any-jump.vim'
+Plug 'easymotion/vim-easymotion'
 
 " General Highlighter
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
