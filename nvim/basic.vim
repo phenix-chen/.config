@@ -37,11 +37,12 @@ let mapleader = ";"
 " noremap ; :
 
 " Save & quit
-noremap Q :q<cr>
+" noremap Q :q<cr>
 
 
 " Fast saving
 nmap <leader>w :w!<cr>
+nmap <leader>q :q<cr>
 nmap <leader>rc :source $MYVIMRC<cr>
 
 " :W sudo saves the file 
@@ -377,7 +378,7 @@ endif
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
+" map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>

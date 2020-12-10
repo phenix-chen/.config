@@ -7,7 +7,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [ -f $HOME/.config/bin/z.sh ] && . $HOME/.config/bin/z.sh
 
 # thefuck
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

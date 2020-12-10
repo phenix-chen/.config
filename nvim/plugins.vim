@@ -48,6 +48,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'pechorin/any-jump.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-startify'
+Plug 'michaeljsmith/vim-indent-object'
 
 " General Highlighter
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -158,6 +159,7 @@ nmap tt :CocCommand explorer<cr>
 " ===
 " nmap <c-p> :Leaderf file<cr>
 nmap <c-f> :LeaderfFunction!<cr>
+noremap <c-p> :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 
 
 " ===
@@ -228,7 +230,7 @@ hi illuminatedWord cterm=undercurl gui=undercurl
 " ===
 " === fzf.vim
 " ===
-nmap <silent> <c-p> :Files<cr>
+nmap <silent> <leader><c-p> :Files<cr>
 " nmap <silent> <c-g> :GFiles<cr>
 " nmap <silent> <c-o> :Buffers<cr>
 nmap <c-b> :Rg!<space>
