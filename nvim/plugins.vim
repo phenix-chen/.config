@@ -269,7 +269,7 @@ nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
 nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
 
 " ===
-" === floaterm
+" === easymotion
 " ===
 
-
+nmap f <Plug>(easymotion-overwin-f)

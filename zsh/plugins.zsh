@@ -25,7 +25,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # antigen theme robbyrussell
 # antigen theme ys
-THEME=ys
+antigen theme dracula/zsh
+THEME=dracula
 # THEME=denysdovhan/spaceship-prompt
 antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 antigen apply
