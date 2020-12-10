@@ -54,7 +54,7 @@ Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'RRethy/vim-illuminate'
 
 " Tmux
-Plug 'christoomey/vim-tmux-navigator'
+" Plug 'christoomey/vim-tmux-navigator'
 " wiki
 Plug 'vimwiki/vimwiki'
 
@@ -93,8 +93,8 @@ let g:coc_global_extensions = [
     \ 'coc-lists',
     \ 'coc-prettier',
     \ 'coc-snippets',
-    \ 'coc-pyright', 
     \ 'coc-vimlsp']
+    " \ 'coc-pyright', 
 set hidden
 set updatetime=100
 set shortmess+=c
