@@ -9,4 +9,4 @@
     ci = commit
     st = status
     last = log -1 HEAD
-	logl = log --oneline --graph
+	logl = log --oneline --graph --all
