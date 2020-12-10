@@ -19,7 +19,8 @@ source ~/.config/zsh/plugins.zsh
 function auto_pipenv_shell {
     if [ ! -n "${PIPENV_ACTIVE+1}" ]; then
         if [ -f "Pipfile" ] ; then
-            pipenv shell
+            source "$(pipenv --venv)/bin/activate"
+            # pipenv shell
         fi
     fi
 }
@@ -29,4 +30,4 @@ function cd {
     auto_pipenv_shell
 }
 
-# auto_pipenv_shell
+auto_pipenv_shell
