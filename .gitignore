@@ -12,7 +12,7 @@
 !.gitignore
 !README.md
 
-local.zsh
+local.*
 *.zwc
 
 zsh/.zcompdump

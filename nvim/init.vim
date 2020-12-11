@@ -14,6 +14,7 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/function.vim
 source ~/.config/nvim/md-snippets.vim
 " source ~/.config/nvim/which-key.vim
+source ~/.config/nvim/local.vim
 
 
 " ===
