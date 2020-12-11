@@ -252,11 +252,12 @@ let g:vimwiki_list = [
     \{'path': '/Users/chen/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor/TodoList',
      \'syntax': 'markdown',
      \'ext': 'md'}]
-map <leader>wt <Plug>VimwikiTabIndex :lcd %:p:h<cr>
-map <leader>wl <Plug>VimwikiToggleListItem
-map <leader>wk <Plug>VimwikiRejectedListItem
-map <leader>wv <Plug>VimwikiVSplitLink 
-map <leader>wb <Plug>VimwikiSplitLink
+map ww sl<Plug>VimwikiIndex :lcd %:p:h<cr>
+map wt <Plug>VimwikiTabIndex :lcd %:p:h<cr>
+map wl <Plug>VimwikiToggleListItem
+map wk <Plug>VimwikiRejectedListItem
+map wv <Plug>VimwikiVSplitLink 
+map wb <Plug>VimwikiSplitLink
 
 function! VimwikiFindIncompleteTasks()
   lvimgrep /- \[ \]/ %:p
