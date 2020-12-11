@@ -63,7 +63,7 @@ tmap <c-j> <c-\><c-n><c-w>j
 tmap <c-k> <c-\><c-n><c-w>k
 tmap <c-l> <c-\><c-n><c-w>l
 tmap <c-h> <c-\><c-n><c-w>h
-tmap <esc> <c-\><c-n>
+" tmap <esc> <c-\><c-n>
 
 " enable mouse
 set mouse=a
