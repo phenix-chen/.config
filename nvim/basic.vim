@@ -67,6 +67,9 @@ tmap <c-h> <c-\><c-n><c-w>h
 
 " enable mouse
 set mouse=a
+
+" using system clipboard
+set clipboard+=unnamedplus
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

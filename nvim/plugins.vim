@@ -158,8 +158,9 @@ nmap tt :CocCommand explorer<cr>
 " === Leaderf
 " ===
 " nmap <c-p> :Leaderf file<cr>
-nmap <c-f> :LeaderfFunction!<cr>
-noremap <c-p> :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+" nmap <c-f> :LeaderfFunction!<cr>
+" noremap <c-p> :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+" let g:Lf_CommandMap = {'<C-P>': '<C-K>', '<C-N>': '<C-J>'}
 
 
 " ===
