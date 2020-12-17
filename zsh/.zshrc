@@ -32,12 +32,20 @@ function auto_pipenv_shell {
     fi
 }
 
-function cd {
-    builtin cd "$@"
-    auto_pipenv_shell
+function auto_venv_shell {
+    if [ ! -n "${VIRTUAL_ENV}" ]; then
+        if [ -d ".venv" ] ; then
+            source ".venv/bin/activate"
+        fi
+    fi
 }
 
-auto_pipenv_shell
+function cd {
+    builtin cd "$@"
+    auto_venv_shell
+}
+
+auto_venv_shell
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

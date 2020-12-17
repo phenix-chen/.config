@@ -49,6 +49,7 @@ Plug 'pechorin/any-jump.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-startify'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-surround'
 
 " General Highlighter
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -65,6 +66,8 @@ Plug 'psliwka/vim-smoothie'
 
 "Terminal
 Plug 'voldikss/vim-floaterm'
+
+Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
 
@@ -231,7 +234,7 @@ hi illuminatedWord cterm=undercurl gui=undercurl
 " ===
 " === fzf.vim
 " ===
-nmap <silent> <leader><c-p> :Files<cr>
+nmap <silent> <c-p> :Files<cr>
 " nmap <silent> <c-g> :GFiles<cr>
 " nmap <silent> <c-o> :Buffers<cr>
 nmap <c-b> :Rg!<space>
@@ -271,4 +274,4 @@ nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
 " === easymotion
 " ===
 
-nmap f <Plug>(easymotion-overwin-f)
+" nmap f <Plug>(easymotion-overwin-f)
