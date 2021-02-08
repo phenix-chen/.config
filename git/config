@@ -13,3 +13,5 @@
 
 [credential]
 	helper = store
+[diff]
+	submodule = log

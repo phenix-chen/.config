@@ -232,7 +232,7 @@ noremap sj :set splitbelow<CR>:split<CR>
 noremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
 noremap sl :set splitright<CR>:vsplit<CR>
 
-nmap <c-a> 0
+nmap <c-a> ^
 nmap <c-e> $
 inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
