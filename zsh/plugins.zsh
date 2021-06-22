@@ -27,6 +27,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # antigen theme ys
 # antigen theme dracula/zsh
 # antigen theme romkatv/powerlevel10k
+# THEME=ys
 # THEME=romkatv/powerlevel10k
 # THEME=denysdovhan/spaceship-prompt
 THEME=dracula/zsh

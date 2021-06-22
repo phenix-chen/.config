@@ -24,3 +24,4 @@ alias lg=lazygit
 #     alias cat=ccat
 # fi
 
+alias dl=trash-put
